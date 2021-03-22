@@ -1,0 +1,25 @@
+<h2>List of users</h2>
+<nz-table #middleTable nzSize="middle" [nzData]="dataSource">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+        </tr>
+        <!-- id: string;
+  name: string;
+  email: string;
+  gender: string;
+  updated_at: string;
+  created_at: string; -->
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of middleTable.data">
+            <td>{{ data.id }}</td>
+            <td>{{ data.name}}</td>
+            <td>{{ data.email}}</td>
+            <td>{{ data.gender}}</td>
+        </tr>
+    </tbody>
+</nz-table>
